@@ -4,7 +4,7 @@ $dbHost = getenv('DB_HOST') ?: 'mysql-danigt.alwaysdata.net';
 $dbName = getenv('DB_NAME') ?: 'danigt_gestionar';
 $dbUser = getenv('DB_USER') ?: 'danigt';
 // Por seguridad, sustituye este marcador por tu contraseña o define DB_PASS en el servidor.
-$dbPass = getenv('DB_PASS') ?: 'CAMBIA_ESTA_CLAVE';
+$dbPass = getenv('DB_PASS') ?: 'clase1234';
 try {
     $pdo = new PDO("mysql:host={$dbHost};dbname={$dbName};charset=utf8mb4", $dbUser, $dbPass, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
